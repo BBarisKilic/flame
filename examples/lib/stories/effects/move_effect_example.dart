@@ -5,6 +5,7 @@ import 'package:flame/game.dart';
 import 'package:flame/src/effects2/move_effect.dart'; // ignore: implementation_imports
 import 'package:flame/src/effects2/standard_effect_controller.dart'; // ignore: implementation_imports
 import 'package:flutter/material.dart';
+
 import '../../commons/square_component.dart';
 
 class MoveEffectExample extends FlameGame {
@@ -77,7 +78,7 @@ class MoveEffectExample extends FlameGame {
     }
     for (var i = 0; i < 40; i++) {
       add(
-        CircleComponent(5)
+        CircleComponent(radius: 5)
           ..add(
             MoveEffect.along(
                 path1,
